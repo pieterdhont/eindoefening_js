@@ -35,7 +35,7 @@ function updateFilmDisplay(films, filmIndex) {
     document.getElementById(key)[key === "foto" ? "src" : "innerText"] = value;
   });
 
-  ["cast", "genres", "regisseurs"].forEach((key) => {
+  ["cast", "genres", "regisseurs"].forEach((key) => { 
     const container = document.getElementById(key);
     container.innerHTML = "";
     film[key].forEach((value) => {
